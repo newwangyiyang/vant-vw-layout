@@ -10,9 +10,17 @@ import axios from './axios/http';
 Vue.prototype.$http = axios;
 Vue.config.productionTip = false
 
+//引入顶部提示消息
+import notie from 'notie';
+import '../static/css/notie.css';
+Vue.prototype.$notie = notie;
+
+import store from './vuex/store';
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'
