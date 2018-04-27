@@ -33,3 +33,4 @@ img{ border:0px;}
 /** 重置表格元素 **/
 table { border-collapse: collapse; border-spacing: 0; }
 textarea {box-sizing: border-box}
+div{box-sizing: border-box}

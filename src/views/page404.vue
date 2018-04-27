@@ -12,6 +12,9 @@ export default {
         return {
 
         }
+    },
+    created() {
+        document.title = '404页面';
     }
 }
 </script>
@@ -19,7 +22,7 @@ export default {
 <style lang="less" scoped>
 .share_no_way_index {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 0 30px;
     background-color: #d1d8e0;
@@ -28,14 +31,6 @@ export default {
     overflow: hidden;
     img {
         width: 80%;
-    }
-    p {
-        font-size: 18px;
-        color: red;
-        span {
-            font-size: 24px;
-            color: teal;
-        }
     }
 }
 </style>
