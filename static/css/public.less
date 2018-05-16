@@ -1,0 +1,70 @@
+//定义字体
+.font-all(){
+    font-family: 'punctuation', 'PingFangSC-Regular', "Microsoft YaHei", "微软雅黑";
+}
+
+//定位水平居中
+.pos-hc () {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+//定位垂直居中
+.pos-vc () {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+//定位水平垂直居中
+.pos-c () {
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+}
+
+//flex水平居中
+.flex-hc() {
+    display: flex;
+    justify-content: center;
+}
+//flex垂直居中
+.flex-vc() {
+    display: flex;
+    align-items: center;
+}
+//flex水平垂直居中
+.flex-c() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//flex换轴水平垂直居中
+.flex-v-c() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+//背景图片
+.bg-img(@url) {
+    background: url(@url) no-repeat center / 100% 100%;
+}
+//底部边框
+.border-b (@color:#ccc) {
+    border-bottom: 1px solid @color; 
+}
+//省略号
+.ell() {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+//多行省略号
+.lell(@num:2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @num;
+    overflow: hidden;
+}
