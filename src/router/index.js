@@ -7,17 +7,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'index',
-      component: resolve => require(['@/views/index'], resolve)
-    },
-    {
-      path: '/page404',
-      name: 'page404',
-      component: resolve => require(['@/views/page404'], resolve)
+      name: 'login',
+      component: resolve => require(['@/views/login/login'], resolve)
     },
     {
       path: '*',
-      component: resolve => require(['@/views/page404'], resolve)
+      component: resolve => require(['@/views/page404/page404'], resolve)
     }
   ]
 })

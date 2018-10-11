@@ -1,6 +1,6 @@
 <template>
     <div class="share_no_way_index">
-        <img src="../assets/img/404pageBG.png" alt="未找到页面提示信息">
+        <img src="../../assets/img/404pageBG.png" alt="未找到页面提示信息">
     </div>
 </template>
 
