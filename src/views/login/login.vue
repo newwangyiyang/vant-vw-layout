@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
     async created() {
         //声明标题
@@ -17,6 +19,12 @@ export default {
         const { userInfo,params } = this.$store.getters;
         console.log(userInfo.name);
         console.log(params.a);
+
+        console.log(this.userInfo);
+        console.log(this.params);
+    },
+    computed: {
+        ...mapGetters(['userInfo', 'params'])
     }
 }
 </script>
