@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 //样式初始化
-import '../static/css/reset.css';
+// import '../static/css/reset.css';
 //引入axios请求
 // import axios from './axios/http';
 // Vue.prototype.$http = axios;
@@ -12,9 +12,9 @@ import '../static/css/reset.css';
 Vue.config.productionTip = false
 
 //引入顶部提示消息
-import notie from 'notie';
-import '../static/css/notie.css';
-Vue.prototype.$notie = notie;
+// import notie from 'notie';
+// import '../static/css/notie.css';
+// Vue.prototype.$notie = notie;
 
 import store from './store';
 
